@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Amrutha Chappa — Web Developer for Local Businesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-brand">Amrutha<span>.</span></a>
+  <ul class="nav-center">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#why">About</a></li>
+    <!-- <li><a href="#testimonials">Reviews</a></li> -->
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://wa.me/919010777738" class="btn btn-ghost" target="_blank">💬 WhatsApp</a>
+    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#projects" onclick="toggleMenu()">Work</a>
+  <a href="#why" onclick="toggleMenu()">Why Me</a>
+  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="https://wa.me/919010777738" target="_blank">💬 WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<div id="hero"></div>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-inner">
+    <span class="strip-label">Trusted by businesses in</span>
+    <div class="strip-logos">
+      <span class="strip-logo">Banjara Hills</span>
+      <span class="strip-logo">Jubilee Hills</span>
+      <span class="strip-logo">Hitech City</span>
+      <span class="strip-logo">Gachibowli</span>
+      <span class="strip-logo">Kukatpally</span>
+      <span class="strip-logo">Secunderabad</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services"></div>
+
+<!-- PROJECTS -->
+<div id="projects"></div>
+
+<!-- WHY -->
+<div id="why"></div>
+
+
+<!-- TESTIMONIALS -->
+<!-- <div id="testimonials"></div> -->
+
+<!-- CONTACT -->
+<div id="contact"></div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modalBox">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-thumb" id="modalThumb"></div>
+    <div class="modal-body">
+      <div class="modal-meta">
+        <span class="modal-category" id="modalCategory"></span>
+      </div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-sub" id="modalSub"></p>
+      <div class="modal-grid">
+        <div class="modal-block">
+          <div class="modal-block-title">Key Features</div>
+          <ul id="modalFeatures"></ul>
+        </div>
+        <div class="modal-block">
+          <div class="modal-block-title">Business Goals Achieved</div>
+          <ul id="modalGoals"></ul>
+        </div>
+      </div>
+      <div class="modal-block-title" style="font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:0.75rem">Tech Stack</div>
+      <div class="modal-stack" id="modalStack"></div>
+      <div class="modal-actions">
+        <a href="https://saloon-website-flame-psi.vercel.app/" class="btn btn-accent">🚀 View Live Demo</a>
+        <a href="https://github.com/Amrutha9010/Saloon_Website" class="btn btn-outline">📁 View GitHub</a>
+        <a href="#contact" class="btn btn-ghost" onclick="closeModal()">Want something similar?</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

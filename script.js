@@ -132,7 +132,7 @@ function openModal(key) {
   document.getElementById("modalTitle").textContent = p.title;
   document.getElementById("modalSub").textContent = p.sub;
   document.getElementById("liveDemoBtn").href = p.live;
-  document.getElementById("githubBtn").href = p.github;
+  // document.getElementById("githubBtn").href = p.github;
 
   // IMAGE SET
   document.getElementById("modalThumb").innerHTML = `

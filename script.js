@@ -61,9 +61,6 @@ const projects = {
       "Mobile-first design since 80% of gym leads come from phones",
     ],
     stack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
       "Responsive Design",
       "WhatsApp API",
       "Google Maps",
@@ -72,8 +69,8 @@ const projects = {
   spice: {
     category: "Restaurant",
     title: "Spice Garden Restaurant",
-    live: "https://spice-garden-restaurant.vercel.app/",
-    github: "https://github.com/Amrutha9010/SpiceGardenRestaurant",
+    live: "https://restraunt-website-chi.vercel.app/",
+    github: "https://github.com/Amrutha9010/Restraunt_Website",
     sub: "A warm, appetising website for a South Indian restaurant in Banjara Hills. Designed to make customers hungry before they even walk in — with a visual menu, table booking, and easy directions.",
     image: "images/restaurant.png",
     features: [
@@ -92,9 +89,6 @@ const projects = {
       'Clear contact section reduced "where are you located" calls',
     ],
     stack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
       "Reservation Form",
       "Google Maps",
       "Instagram API",
@@ -124,9 +118,6 @@ const projects = {
       'Mobile-optimised for patients searching "beauty salon near me"',
     ],
     stack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
       "Appointment Form",
       "Schema Markup",
       "SEO-Optimised",

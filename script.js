@@ -1,7 +1,5 @@
 async function loadSection(id, file) {
-
   try {
-
     console.log("Loading:", file);
 
     const element = document.getElementById(id);
@@ -22,14 +20,12 @@ async function loadSection(id, file) {
     console.log(`${file} loaded successfully`);
 
     element.innerHTML = html;
-
   } catch (err) {
     console.error("ERROR:", err);
   }
 }
 
 async function loadSections() {
-
   await loadSection("hero", "hero.html");
   await loadSection("services", "services.html");
   await loadSection("projects", "projects.html");
@@ -43,8 +39,10 @@ loadSections();
 
 const projects = {
   fitzone: {
-    category: "Gym & Fitness",  
+    category: "Gym & Fitness",
     title: "FitZone Gym",
+    live: "https://iron-forge-gym-vert-xi.vercel.app/",
+    github: "https://github.com/Amrutha9010/IronForgeGym",
     sub: "A bold, conversion-focused website for a modern gym in Gachibowli. The goal was to make it easy for potential members to explore plans, book a free trial, and feel motivated to join — all from their phone.",
     image: "images/gym.png",
     features: [
@@ -74,6 +72,8 @@ const projects = {
   spice: {
     category: "Restaurant",
     title: "Spice Garden Restaurant",
+    live: "https://spice-garden-restaurant.vercel.app/",
+    github: "https://github.com/Amrutha9010/SpiceGardenRestaurant",
     sub: "A warm, appetising website for a South Indian restaurant in Banjara Hills. Designed to make customers hungry before they even walk in — with a visual menu, table booking, and easy directions.",
     image: "images/restaurant.png",
     features: [
@@ -102,9 +102,11 @@ const projects = {
   },
   "beauty salon": {
     category: "Beauty Salon",
-    
+
     title: "Beauty Salon",
     sub: "A modern, inviting beauty salon website with service listings, staff profiles, appointment booking, and customer testimonials.",
+    live: "https://saloon-website-flame-psi.vercel.app/",
+    github: "https://github.com/Amrutha9010/Saloon_Website",
     image: "images/salon.png",
     features: [
       "Staff profiles with photos & bios",
@@ -133,12 +135,13 @@ const projects = {
 };
 
 function openModal(key) {
-
   const p = projects[key];
 
   document.getElementById("modalCategory").textContent = p.category;
   document.getElementById("modalTitle").textContent = p.title;
   document.getElementById("modalSub").textContent = p.sub;
+  document.getElementById("liveDemoBtn").href = p.live;
+  document.getElementById("githubBtn").href = p.github;
 
   // IMAGE SET
   document.getElementById("modalThumb").innerHTML = `
@@ -203,7 +206,6 @@ document.addEventListener("keydown", (e) => {
 
 // Form submit
 setTimeout(() => {
-
   const formButton = document.querySelector(".form-submit");
 
   if (formButton) {
@@ -213,5 +215,4 @@ setTimeout(() => {
       this.disabled = true;
     });
   }
-
 }, 500);
